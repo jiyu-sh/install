@@ -1,0 +1,12 @@
+use anyhow::Result;
+use clap::Parser;
+use jiyu_install::app::App;
+use pid1::relaunch_if_pid1;
+
+fn main() -> Result<()> {
+    relaunch_if_pid1().expect("failed to relaunch");
+
+    App::parse().run()?;
+
+    Ok(())
+}

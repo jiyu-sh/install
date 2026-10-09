@@ -1,0 +1,38 @@
+[package]
+name = "jiyu-install"
+version = "0.1.0"
+authors = ["Jiyu <hello@jiyu.sh>"]
+rust-version = "1.99"
+edition = "2024"
+description = "Freedom of managing proxies. (install)"
+readme = "README.md"
+repository = "https://github.com/jiyu-sh/install"
+homepage = "https://install.jiyu.sh/"
+license = "MIT"
+
+[dependencies.anyhow]
+version = "1.0.104"
+
+[dependencies.axum]
+version = "0.8.9"
+
+[dependencies.clap]
+version = "4.6.7"
+features = ["derive", "env"]
+
+[dependencies.mime]
+version = "0.3.17"
+
+[dependencies.pid1]
+version = "0.1.6"
+
+[dependencies.thiserror]
+version = "2.0.21"
+
+[dependencies.tokio]
+version = "1.53.2"
+features = ["full"]
+
+[dependencies.tower-http]
+version = "0.7.1"
+features = ["fs"]
