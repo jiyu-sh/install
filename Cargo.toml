@@ -35,4 +35,4 @@ features = ["full"]
 
 [dependencies.tower-http]
 version = "0.7.1"
-features = ["fs"]
+features = ["fs", "set-header"]

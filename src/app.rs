@@ -18,7 +18,7 @@ pub type Port = u16;
 
 pub type Address<'a> = (Host<'a>, Port);
 
-pub const DEFAULT_DIRECTORY: &str = "install";
+pub const DEFAULT_DIRECTORY: &str = "static";
 
 pub const DEFAULT_SCRIPT: &str = "install.sh";
 
