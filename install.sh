@@ -15,13 +15,15 @@ has_local 2>/dev/null || alias local=typeset
 
 # variables
 
+# keep this version in sync
 JIYU_INSTALL_VERSION="0.1.0"
-JIYU_INSTALL_CONFIRM=yes
-JIYU_INSTALL_QUIET=no
+
+JIYU_INSTALL_CONFIRM="${JIYU_INSTALL_CONFIRM:-yes}"
+JIYU_INSTALL_QUIET="${JIYU_INSTALL_QUIET:-no}"
+
+JIYU_INSTALL_ROOT="${JIYU_INSTALL_ROOT:-https://install.jiyu.sh/static}"
 
 JIYU_NAME="jiyu"
-
-JIYU_ROOT="${JIYU_INSTALL_ROOT:-https://install.jiyu.sh/static}"
 
 # usage
 
