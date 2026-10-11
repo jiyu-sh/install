@@ -30,8 +30,8 @@ COPY --from=builder /app/target/release/jiyu-install .
 # copy the install script to be served
 COPY --from=builder /app/install.sh .
 
-# copy the install directory to be served
-COPY --from=builder /app/install ./install
+# copy the static directory to be served
+COPY --from=builder /app/static ./static
 
 EXPOSE 10946
 
